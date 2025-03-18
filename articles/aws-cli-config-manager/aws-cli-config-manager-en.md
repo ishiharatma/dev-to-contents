@@ -60,7 +60,8 @@ The PowerShell script proposed in this article offers a more efficient solution 
 - Manual editing is error-prone and time-consuming
 - Managing settings on a per-project basis is difficult
 
-#### Solutions
+### Solutions
+
 This script addresses these issues with the following approach:
 
 - Manage settings in separate files for each project

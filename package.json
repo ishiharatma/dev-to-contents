@@ -1,21 +1,8 @@
 {
   "name": "dev.to-contents",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ishiharatma/dev-to-contents.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ishiharatma/dev-to-contents/issues"
-  },
-  "homepage": "https://github.com/ishiharatma/dev-to-contents#readme",
-  "description": "",
   "dependencies": {
     "@sinedied/devto-cli": "^1.4.0"
   },
@@ -23,7 +10,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.3.3",
     "textlint": "^14.2.1",
-    "textlint-filter-rule-comments": "^1.2.2",
+		"textlint-filter-rule-comments": "^1.2.2",
     "textlint-formatter-codecov": "^1.0.2",
     "textlint-rule-aws-service-name": "^1.11.0",
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
