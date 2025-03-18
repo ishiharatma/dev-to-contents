@@ -21,7 +21,7 @@ While juggling several AWS projects, I found myself frustrated by this exact pro
 
 You can find the complete source code in [this GitHub repository](https://github.com/ishiharatma/aws-cli-config-manager).
 
-![overview](./assests/aws-cli-config-manager.drawio.svg)
+![overview](./assets/aws-cli-config-manager.drawio.svg)
 
 ### Alternative Approaches
 
@@ -255,4 +255,3 @@ I hope this tool helps you manage your AWS CLI configuration more efficiently.
 Happy cloud computing!
 
 Follow me for more tips :)
-
