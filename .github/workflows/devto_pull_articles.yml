@@ -25,7 +25,7 @@ jobs:
         env:
           DEVTO_TOKEN: ${{ secrets.DEVTO_TOKEN }}
           DEVTO_REPO: dev-to-contents/articles
-      - uses: peter-evans/create-pull-request@v5
+      - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: Pull articles
           delete-branch: true
