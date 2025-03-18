@@ -1,0 +1,19 @@
+{
+  "name": "dev.to-contents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishiharatma/dev-to-contents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishiharatma/dev-to-contents/issues"
+  },
+  "homepage": "https://github.com/ishiharatma/dev-to-contents#readme",
+  "description": ""
+}
