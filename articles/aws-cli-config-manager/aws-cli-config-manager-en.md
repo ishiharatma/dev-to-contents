@@ -6,6 +6,7 @@ tags: 'aws, powershell, devops, automation'
 cover_image: ''
 canonical_url: null
 id: 2340638
+organization_id: 2794
 ---
 
 ## ☘️ Introduction
