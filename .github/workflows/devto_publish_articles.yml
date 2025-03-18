@@ -28,7 +28,7 @@ jobs:
         with:
           cache: 'npm'
       - run: npm install
-      - run: npx devto run dev push
+      - run: npx run dev push
         env:
           DEVTO_TOKEN: ${{ secrets.DEVTO_TOKEN }}
           DEVTO_REPO: dev-to-contents/articles
