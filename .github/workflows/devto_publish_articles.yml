@@ -1,40 +1,26 @@
-name: Dev.to - publish articles
-
+# runs on pull requests, manually, and the main branch
 on:
+  pull_request:
+  workflow_dispatch:
   push:
     branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pull-requests: write
-
-defaults:
-  run:
-    shell: bash
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+    - main
 
 jobs:
-  publish_articles:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+  my_job:
+    name: Dev.to - publish articles
+    permissions:
+      contents: write # this lets the bot update the post in github
+    runs-on: ubuntu-latest # ubuntu costs half the price of windows
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          cache: 'npm'
-      - run: npm install
-      - run: npx run dev push
-        env:
-          DEVTO_TOKEN: ${{ secrets.DEVTO_TOKEN }}
-          DEVTO_REPO: dev-to-contents/articles
-      - uses: peter-evans/create-pull-request@v7
-        with:
-          commit-message: Publish articles
-          delete-branch: true
-          title: Publish articles
-          branch: create-pull-request/patch-publish-articles-devto
+    - uses: actions/checkout@v3 # checks out my code to the actions build
+    - name: Publish articles on Dev.to
+      uses: sinedied/publish-devto@v2
+      with:
+        devto_key: ${{ secrets.SECRET_DEVTO_TOKEN }} # the secret you setup
+        github_token: ${{ secrets.GITHUB_TOKEN }} # this is an inbuilt secret by github
+        files: 'articles/**/*.md'
+        branch: main
+        conventional_commits: true
+        dry_run: false # set this to true if you want to do a dry run
