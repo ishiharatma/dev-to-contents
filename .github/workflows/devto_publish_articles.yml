@@ -18,7 +18,7 @@ jobs:
     - name: Publish articles on Dev.to
       uses: sinedied/publish-devto@v2
       with:
-        devto_key: ${{ secrets.SECRET_DEVTO_TOKEN }} # the secret you setup
+        devto_key: ${{ secrets.DEVTO_TOKEN }} # the secret you setup
         github_token: ${{ secrets.GITHUB_TOKEN }} # this is an inbuilt secret by github
         files: 'articles/**/*.md'
         branch: main
