@@ -21,7 +21,8 @@
 				"bierner.github-markdown-preview",
 				"GitHub.copilot",
 				"TakumiI.markdowntable",
-				"taichi.vscode-textlint"
+				"taichi.vscode-textlint",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
