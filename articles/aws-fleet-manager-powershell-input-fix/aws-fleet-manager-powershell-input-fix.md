@@ -6,6 +6,7 @@ tags: 'aws, powershell, ec2, troubleshooting'
 cover_image: ./assets/cover.svg
 canonical_url: null
 organization_id: 2794
+id: 2342672
 ---
 
 ## 🚨 The Problem
