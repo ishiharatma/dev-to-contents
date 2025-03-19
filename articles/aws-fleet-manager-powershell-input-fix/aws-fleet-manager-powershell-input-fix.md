@@ -79,8 +79,6 @@ The PSReadline module handles keyboard input in PowerShell, and version 2.0.0 ha
 
 This simple fix saves you from the frustration of not being able to type commands directly into PowerShell when managing your Windows Server EC2 instances through Fleet Manager. No more copying and pasting every single command!
 
-If you encounter any other PowerShell issues with AWS environments, feel free to share in the comments.
-
 Happy cloud computing!
 
 Follow me for more AWS and PowerShell tips :)
