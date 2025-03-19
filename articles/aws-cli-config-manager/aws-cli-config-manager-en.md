@@ -1,6 +1,6 @@
 ---
 title: Efficiently Managing AWS CLI Profiles Across Multiple Projects with PowerShell
-published: false
+published: true
 description: A practical PowerShell solution for managing AWS CLI credentials and config files across multiple projects
 tags: 'aws, powershell, devops, automation'
 cover_image: ./assets/cover.svg
